@@ -20,10 +20,11 @@ On utilisera le meme type d'actionneur pour le grattage de la corde
 
 ## Le code 
 
-Je ne ferait que 1 version du code avec l'utilisation de servomoteurs pour les actions sur la/les cordes; il y aura deux cas d'utilisation avec ou sans actionneur sur le doigt 
+Je ne ferait que une version du code avec l'utilisation de servomoteurs pour les actions sur la/les cordes; il y aura deux cas d'utilisation avec ou sans actionneur sur le doigt  (pour l'instant) 
 Le code est concu pour etre adaptable a plusieurs instrument, il suffira d'adapter le fichier settings.h en fonction de l' utilisation.
 
 Nous utiliserons une carte pca9685 pour controller le ou les servomoteurs de chaque corde.
+<img src="https://github.com/glloq/Continuous_PluckStepper/blob/main/img/SchemasActionneurs.png" alt="SchemasActionneurs." width=70% height=70%/>  
 
 de la meme maniere que pour la technique avec les solenoides ou les servomoteurs, nous declarerons les parametre de chaque corde dans un tableau de struct:
 ```
@@ -42,6 +43,7 @@ struct StringMapping {
     int angleServoFingerClose;// angle of the servoFinger touching the cord
 };
 ```
+### struture du code
 
 
 
